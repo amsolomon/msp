@@ -1,37 +1,99 @@
-element.style {
-}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+} 
 
 body {
-background-color: #FFFFFF;
-display: block;
-margin: 8px;
-padding: 0px;
-overflow: hidden;
+    font-family: georgia, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
 }
 
-user agent stylesheetbody {
-display: block;
-margin: 8px;
+p {
+    margin-bottom: 16px;
 }
 
-head {
-display: none;
+header {
+    background-color: #000000; /* black */
+    color: #ffffff; /* white */
+    height: 55px;
+    width: 100%;
 }
 
-table {
-white-space: normal;
-line-height: normal;
-font-weight: normal;
-font-size: medium;
-font-variant: normal;
-font-style: normal;
-color: -webkit-text;
-text-align: start;
+/*All of the links in the header */
+header a {
+    /*margin-right: 20px;*/
+    color: #aaaaaa; /* grey */
+    text-decoration: none /* takes off underlines */
 }
 
-table {
-display: table;
-border-collapse: separate;
-border-spacing: 2px;
-border-color: gray;
+header a:link {} /* if it has not been clicked */
+header a:visited {} /* if user has been to site */
+
+header a:hover {
+    color: #ffffff; /* white */
+}
+
+header a:active {
+    text-decoration: underline
+} /* is user is clicking down*/
+
+header a:focus {} /* if user hits tab key */
+
+/* Just the h1 box*/
+header h1 {
+    float: left;
+    /*display: inline;*/
+    font-size: 28px;
+    font-family: helvetica, arial, sana-serif;
+    font-weight: 500; /*width of boldness 800 normall - 400 is thin */
+    border: 3px solid white;
+    padding: 10px;
+    /*margin: 40px;*/
+    /*width: 60%;*/
+}
+/* Just the nav box*/
+header nav {
+    border: 3px solid red;
+    /*width: 40%;*/
+    margin-top: 13px;
+    /*height: 40px;*/
+    float: left;
+}
+/* Just the nav box links*/
+header nav a {
+    margin-right: 20px;
+}
+
+header img {
+    /*border: 5px solid #cccccc; /*grey*/
+    margin: 0 5% 0  5%;
+    padding: 5px; /* Space on the inside but adds to the over all width. */
+    width: 30%;
+    float: left;
+}
+
+article {
+    padding: 0 10px 0 10px;
+    clear: both /* ignore a float, stay as block level element */
+     
+}
+
+article h1 {
+    font-size: 36px
+    line-height: 48px;
+    margin-top: 20px;
+}
+
+article h2 {
+    font-size: 24px
+    line-height: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    font-size: 10px;
+    padding: 0 10px 0 10px;
 }
